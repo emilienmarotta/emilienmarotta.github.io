@@ -183,7 +183,7 @@ header{
     text-decoration: none;
     color: black;
     border-radius: 15px;
-    border: 1px solid rgba(0,0,0,0);
+    border: 1px solid rgba(0,0,0,0.1);
 }
 
 .join-me-on__box__element:hover{
@@ -303,7 +303,6 @@ footer{
     .join-me-on__box__element{
         width: 17.1rem;
         margin: 1rem 1rem;
-        border: 1px solid rgba(0,0,0,0.1);
     }
 
     .container__me img{
