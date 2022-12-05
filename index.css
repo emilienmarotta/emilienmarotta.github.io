@@ -114,6 +114,7 @@ header{
 .container__box__contact{
     text-decoration: none;
     width: 6rem;
+    text-align: center;
     padding: 2%;
     border: none;
     background: linear-gradient(to right, #848DFF, #61BEFB);
