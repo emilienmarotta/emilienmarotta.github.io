@@ -211,7 +211,6 @@ header{
     text-decoration: none;
     color: black;
     margin-left: 5%;
-    /* font-weight: bold; */
     cursor: pointer;
 }
 
@@ -305,5 +304,9 @@ footer{
     .join-me-on__box__element{
         width: 17.1rem;
         margin: 2rem 1rem;
+    }
+
+    .join-me-on__box__element{
+        border: 1px solid rgba(0,0,0,0.1);
     }
 }
