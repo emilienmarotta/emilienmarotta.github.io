@@ -15,6 +15,7 @@ body{
 *{
     font-family: "Century Gothic", Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
 }
 
 header{
