@@ -68,7 +68,6 @@ header{
 
 .container{
     padding: 0;
-    /* height: 30rem; */
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     display: flex;
@@ -303,10 +302,15 @@ footer{
 
     .join-me-on__box__element{
         width: 17.1rem;
-        margin: 2rem 1rem;
+        margin: 1rem 1rem;
     }
 
     .join-me-on__box__element{
         border: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .container__me img{
+        width: 250px;
+        height: 250px;
     }
 }
