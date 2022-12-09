@@ -129,7 +129,7 @@ header{
 
 .container__box__contact:hover{
     transition: 0.1s;
-    background-color: #111;
+    background-color: #222;
     color: #fff;
     cursor: pointer;
 }
@@ -197,7 +197,7 @@ header{
 
 .join-me-on__box__element:hover{
     color: white;
-    background: linear-gradient(135deg, #222 10%, #111 10%);
+    background: linear-gradient(135deg, #333 10%, #222 10%);
 }
 
 .join-me-on__box__element__head__img__2{
