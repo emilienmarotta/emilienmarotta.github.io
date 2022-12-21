@@ -10,6 +10,7 @@ html{
 body{
     padding: 0;
     margin: 0;
+    background-color: rgb(4,31,76);
 }
 
 *{
@@ -20,29 +21,35 @@ body{
     outline: none;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1%;
-    padding-bottom: 0.5%;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.08) 30%, rgba(0, 0, 0, 0.04) 30%);
+.background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: url("Index/background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
-.logo{
-    width: 50px;
-    height: 50px;
-    margin-left: 1%;
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    padding-top: 3%;
+    padding-bottom: 1.5%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+    border-bottom: 1px solid rgb(27,49,86);
 }
 
 .menu{
-    width: 50rem;
+    width: 70vw;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .menu__element{
-    color: black;
+    color: rgb(126, 151, 195);
     text-decoration: none;
 }
 
@@ -51,7 +58,7 @@ header{
     display: block;
     width: 100%;
     height: 1px;
-    background-color: rgb(0,0,0);
+    background-color: rgb(216, 221, 232);
     transform: scale(0);
     transition: transform 0.2s ease-in-out;
 }
@@ -61,43 +68,26 @@ header{
 }
 
 .menu__element:hover{
-    color: rgb(26, 79, 158);
-}
-
-.menu__contact{
-    margin-right: 15%;
+    color: rgb(216, 221, 232);
 }
 
 
 .container{
-    padding: 0;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    background: linear-gradient(to right, #22566D, #67BFC5);
-}
-
-.container__box{
+    width: 70vw;
+    height: 40vh;
+    margin: 5% auto 10% auto;
+    padding: 5% 1% 0% 1%;
     display: flex;
     flex-direction: column;
-    margin: 3rem 2rem;
-}
-
-.container__me{
-    display: flex;
-    justify-content: center;
     align-items: center;
-    margin: 5rem;
+    background-color: rgba(27, 49, 86, 0.3);
 }
 
-.container__box__name{
-    font-size: 2.5rem;  
-    animation: apparition 1s ease-out;  
-    color: white;
+.container__name{
+    color: rgb(126, 151, 195);
+    font-size: 3rem;
+    animation: apparition 1s ease-in-out;
+    text-align: center;
 }
 
 @keyframes apparition {
@@ -111,57 +101,37 @@ header{
     }
 }
 
-.container__box__description{
-    font-weight: 600;
-    color: #000;
-}
-
-.container__box__contact{
-    text-decoration: none;
-    width: 6rem;
+.container__description{
+    color: rgb(140, 149, 167);
+    font-size: 1.5rem;
     text-align: center;
-    padding: 2%;
+}
+
+.container__contact{
+    text-decoration: none;
+    width: 8rem;
+    text-align: center;
+    padding: 1.5%;
     border: none;
-    background-color: #fff;
-    color: black;
+    border: 2px solid rgb(140, 149, 167);
+    color: rgb(140, 149, 167);
     margin-top: 5%;
-    border-radius: 20px;
+    font-size: 1.2rem;
 }
 
-.container__box__contact:hover{
+.container__contact:hover{
     transition: 0.1s;
-    background-color: #222;
-    color: #fff;
-    cursor: pointer;
-}
-
-.return-top{
-    position: fixed;
-    right: 15px;
-    bottom: 15px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: linear-gradient(to right, #4d99ba, #67BFC5);
-}
-
-.return-top:hover{
-    cursor: pointer;
-    background: linear-gradient(to left, #4d99ba, #67BFC5);
-}
-
-.return-top img{
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    background-color: rgb(216, 221, 232);
+    border: 2px solid rgb(216, 221, 232);
+    color: rgb(27,49,86);
 }
 
 
 .low-container{
+    border-top: 1px solid rgb(27,49,86);
     display: flex;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.08) 60%, rgba(0, 0, 0, 0.04) 40%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.08) 30%, rgba(0, 0, 0, 0.04) 30%);
     padding-bottom: 3rem;
 }
 
@@ -170,6 +140,7 @@ header{
     flex-direction: column;
     align-items: center;
     width: 60rem;
+    color:rgb(126, 151, 195);
 }
 
 .join-me-on__title{
@@ -191,14 +162,8 @@ header{
     padding: 1rem 0;
     margin: 2rem 2rem;
     text-decoration: none;
-    color: black;
-    border: 1px solid rgba(0,0,0,1);
-    background-color: white;
-}
-
-.join-me-on__box__element:hover{
-    color: white;
-    background: linear-gradient(135deg, #333 10%, #222 10%);
+    border: 1px solid rgb(140, 149, 167);
+    color: rgb(140, 149, 167);
 }
 
 .join-me-on__box__element__head__img__2{
@@ -213,12 +178,18 @@ header{
     display: block;
 }
 
+.join-me-on__box__element:hover{
+    color: rgb(27,49,86);
+    background: linear-gradient(135deg, rgb(27,49,86) 10%, rgb(216, 221, 232) 10%);
+    border: 1px solid rgb(216, 221, 232);
+}
+
 .join-me-on__box__element:hover .join-me-on__box__element__name::after{
     transform: scale(1);
 }
 
 .join-me-on__box__element:hover .join-me-on__box__element__name{
-    color: white;
+    color: rgb(27,49,86);
 }
 
 .join-me-on__box__element__head{
@@ -231,7 +202,6 @@ header{
 
 .join-me-on__box__element__name{
     text-decoration: none;
-    color: black;
     margin-left: 5%;
     cursor: pointer;
 }
@@ -252,15 +222,64 @@ header{
 }
 
 
+.box-return-top{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
+}
+
+.return-top{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgb(140, 149, 167);
+}
+
+.return-top:hover{
+    cursor: pointer;
+    background-color: rgb(216, 221, 232);
+    border: 1px solid rgb(216, 221, 232);
+}
+
+.box-return-top:hover{
+    transition: 0.5s ease-in-out;
+    transform: translateY(-10px);
+}
+
+.return-top img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.return-top__img__2{
+    display: none;
+}
+
+.return-top:hover .return-top__img__1{
+    display: none;
+}
+
+.return-top:hover .return-top__img__2{
+    display: block;
+}
+
+
 footer{
+    width: 100%;
     height: 5rem;
-    border-top: 1px solid black;
+    border-top: 1px solid rgb(27,49,86);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #222;
-    color: white;
+    color: rgb(126, 151, 195);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
 }
 
 .license{
@@ -268,7 +287,7 @@ footer{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: white;
+    color: rgb(126, 151, 195);
 }
 
 .license__name::after{
@@ -276,7 +295,7 @@ footer{
     display: block;
     width: 100%;
     height: 1px;
-    background-color: #22566D;
+    background-color: rgb(216, 221, 232);
     transform: scale(0);
     transition: transform 0.2s ease-in-out;
 }
@@ -287,7 +306,7 @@ footer{
 
 .license__name:hover{
     transition: 0.2s ease-in-out;
-    color:#67BFC5;
+    color: rgb(216, 221, 232);
 }
 
 .license img{
@@ -298,34 +317,50 @@ footer{
     margin-top: 5px;
 }
 
-@media (max-width: 490px){
-    .logo{
-        display: none;
+.license__img__2{
+    display: none;
+}
+
+.license:hover{
+    transition: 0.2s ease-in-out;
+}
+
+.license:hover .license__img__1{
+    display: none;
+}
+
+.license:hover .license__img__2{
+    display: block;
+}
+
+
+@media (max-width: 875px){
+    *{
+        font-size: 0.9rem;
     }
 
     .menu{
-        justify-content: space-around;
-        display: flex;
-        padding-right: 0;
-        width: 100%;
-        padding: 1rem 1rem;
+        width: 90vw;
     }
-    
-    .menu__contact{
-        margin: 0;
+
+    .container{
+        width: 90vw;
+        height: 20vh;
+    }
+
+    .container__name{
+        font-size: 2.1rem;
+    }
+
+    .container__description{
+        font-size: 1.1rem;
+    }
+
+    .container__contact{
+        font-size: 0.9rem;
     }
 
     .join-me-on__box__element{
-        width: 17.1rem;
-        margin: 1rem 1rem;
-    }
-
-    .container__me img{
-        width: 250px;
-        height: 250px;
-    }
-
-    .join-me-on__title{
-        margin-top: 2rem;
+        width: 22rem;
     }
 }
