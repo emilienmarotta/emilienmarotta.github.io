@@ -339,6 +339,11 @@ footer{
         font-size: 0.9rem;
     }
 
+    header{
+        padding-top: 5%;
+        padding-bottom: 2.5%;
+    }
+
     .menu{
         width: 90vw;
     }
@@ -361,6 +366,20 @@ footer{
     }
 
     .join-me-on__box__element{
-        width: 22rem;
+        width: 20rem;
     }
+}
+
+@media (max-width: 400px){
+    .background{
+        background: url("Index/background.jpg");
+        background-size: 200%;
+        background-repeat: no-repeat;
+    }
+
+    header{
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+
 }
