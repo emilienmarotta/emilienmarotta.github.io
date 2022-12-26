@@ -16,6 +16,14 @@ body{
     outline: none;
 }
 
+::selection{
+    background-color: #636cef;
+    color: black;
+}
+
+img::selection{
+    background-color: rgba(0,0,0,0);
+}
 
 header{
     display: flex;
