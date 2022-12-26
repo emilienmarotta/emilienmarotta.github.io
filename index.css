@@ -59,7 +59,7 @@ header{
 }
 
 .menu__element{
-    color: #fff;
+    color: #ddd;
     text-decoration: none;
 }
 
@@ -102,7 +102,7 @@ header{
 
 #firstname{
     font-size: inherit;
-    color: white;
+    color: #ddd;
 }
 
 #name{
@@ -140,8 +140,8 @@ header{
     text-align: center;
     padding: 1.5%;
     border: none;
-    border: 2px solid #fff;
-    color: #fff;
+    border: 2px solid #aaa;
+    color: #ddd;
     margin-top: 5%; 
     font-size: 1.2rem;
 }
@@ -167,7 +167,7 @@ header{
     flex-direction: column;
     align-items: center;
     width: 60rem;
-    color:#fff;
+    color: #ddd;
 }
 
 .join-me-on__title{
@@ -189,8 +189,8 @@ header{
     padding: 1rem 0;
     margin: 2rem 2rem;
     text-decoration: none;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #aaa;
+    color: #ddd;
     background-color: #181818;
 }
 
@@ -207,7 +207,7 @@ header{
 }
 
 .join-me-on__box__element:hover{
-    color: #fff;
+    color: #ddd;
     background-color: #101010;
     border: 1px solid #26ce9f;
 }
@@ -305,7 +305,7 @@ footer{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: #fff;
+    color: #ddd;
 }
 
 .license__name::after{
@@ -409,10 +409,15 @@ footer{
         padding-bottom: 5%;
     }
 
-}
+    .container__contact{
+        border: 1px solid white;
+    }
 
-@media (max-height: 330px){
-    .container-box{
-        padding: 1.5%
+    .container__contact:hover{
+        border: 1px solid #26ce9f;
+    }
+
+    .join-me-on__box__element{
+        border: 1px solid #aaa;
     }
 }
