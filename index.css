@@ -27,12 +27,17 @@ img::selection{
 
 header{
     display: flex;
-    justify-content: center;
-    align-items: center ;
-    padding-top: 3%;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 2%;
     padding-bottom: 1.5%;
     border-bottom: 1px solid #26ce9e55;
     background: linear-gradient(130deg, #151515 15%, #181818 15%);
+}
+
+.logo{
+    width: 50px;
+    margin-left: 2%;
 }
 
 .menu{
@@ -67,7 +72,7 @@ header{
 
 
 .container{
-    height: 70vh;
+    /* height: 70vh; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,6 +80,7 @@ header{
 }
 
 .container-box{
+    margin: 5% 0;
     width: 70vw;
     padding: 5% 1% 5% 1%;
     display: flex;
@@ -339,6 +345,10 @@ footer{
 @media (max-width: 875px){
     *{
         font-size: 0.9rem;
+    }
+
+    .logo{
+        display: none;
     }
 
     header{
