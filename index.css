@@ -36,8 +36,19 @@ header{
 }
 
 .logo{
-    width: 50px;
     margin-left: 2%;
+}
+
+.logo__2{
+    display: none;
+}
+
+.logo:hover .logo__1{
+    display: none;
+}
+
+.logo:hover .logo__2{
+    display: inline;
 }
 
 .menu{
