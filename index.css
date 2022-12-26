@@ -380,3 +380,9 @@ footer{
     }
 
 }
+
+@media (max-height: 330px){
+    .container-box{
+        padding: 1.5%
+    }
+}
