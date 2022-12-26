@@ -271,8 +271,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgb(126, 151, 195);
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
+    background-color: #131313;
 }
 
 .license{
