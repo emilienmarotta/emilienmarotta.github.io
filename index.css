@@ -365,6 +365,7 @@ footer{
     header{
         padding-top: 5%;
         padding-bottom: 2.5%;
+        justify-content: center;
     }
 
     .menu{
