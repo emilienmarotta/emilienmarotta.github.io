@@ -2,15 +2,10 @@ html{
     scroll-behavior: smooth;
 }
 
-*::selection{
-    background-color: #22566D;
-    color: white;
-}
-
 body{
     padding: 0;
     margin: 0;
-    background-color: rgb(4,31,76);
+    background-color: #131313;
 }
 
 *{
@@ -21,15 +16,6 @@ body{
     outline: none;
 }
 
-.background{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background: url("Index/background.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
 
 header{
     display: flex;
@@ -37,8 +23,8 @@ header{
     align-items: center ;
     padding-top: 3%;
     padding-bottom: 1.5%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1));
-    border-bottom: 1px solid rgb(27,49,86);
+    border-bottom: 1px solid #26ce9e55;
+    background: linear-gradient(130deg, #151515 15%, #181818 15%);
 }
 
 .menu{
@@ -49,7 +35,7 @@ header{
 }
 
 .menu__element{
-    color: rgb(126, 151, 195);
+    color: #fff;
     text-decoration: none;
 }
 
@@ -58,7 +44,7 @@ header{
     display: block;
     width: 100%;
     height: 1px;
-    background-color: rgb(216, 221, 232);
+    background-color: #26ce9f;
     transform: scale(0);
     transition: transform 0.2s ease-in-out;
 }
@@ -68,27 +54,43 @@ header{
 }
 
 .menu__element:hover{
-    color: rgb(216, 221, 232);
+    color: #26ce9f;
 }
 
 
 .container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(130deg, #151515 80%, #181818 80%);
+}
+
+.container-box{
     width: 70vw;
-    height: 40vh;
-    margin: 5% auto 10% auto;
-    padding: 5% 1% 0% 1%;
+    padding: 5% 1% 5% 1%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(27, 49, 86, 0.3);
+    background-color: rgba(29,29,29,0.8);
+}
+
+#firstname{
+    font-size: inherit;
+    color: white;
+}
+
+#name{
+    font-size: inherit;
+    color: #26ce9f;
 }
 
 .container__name{
-    color: rgb(126, 151, 195);
     font-size: 3rem;
     animation: apparition 1s ease-in-out;
     text-align: center;
 }
+
 
 @keyframes apparition {
     from{
@@ -102,7 +104,7 @@ header{
 }
 
 .container__description{
-    color: rgb(140, 149, 167);
+    color: #888;
     font-size: 1.5rem;
     text-align: center;
 }
@@ -113,25 +115,25 @@ header{
     text-align: center;
     padding: 1.5%;
     border: none;
-    border: 2px solid rgb(140, 149, 167);
-    color: rgb(140, 149, 167);
+    border: 2px solid #fff;
+    color: #fff;
     margin-top: 5%;
     font-size: 1.2rem;
 }
 
 .container__contact:hover{
     transition: 0.1s;
-    background-color: rgb(216, 221, 232);
-    border: 2px solid rgb(216, 221, 232);
-    color: rgb(27,49,86);
+    background-color: rgb(15, 15, 15);
+    border: 2px solid #26ce9f;
+    color: #26ce9f;
 }
 
 
 .low-container{
-    border-top: 1px solid rgb(27,49,86);
+    border-top: 1px solid #26ce9e55;
     display: flex;
     justify-content: center;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.08) 30%, rgba(0, 0, 0, 0.04) 30%);
+    background: linear-gradient(130deg, #151515 30%, #181818 30%);
     padding-bottom: 3rem;
 }
 
@@ -140,7 +142,7 @@ header{
     flex-direction: column;
     align-items: center;
     width: 60rem;
-    color:rgb(126, 151, 195);
+    color:#fff;
 }
 
 .join-me-on__title{
@@ -162,8 +164,8 @@ header{
     padding: 1rem 0;
     margin: 2rem 2rem;
     text-decoration: none;
-    border: 1px solid rgb(140, 149, 167);
-    color: rgb(140, 149, 167);
+    border: 1px solid #fff;
+    color: #fff;
 }
 
 .join-me-on__box__element__head__img__2{
@@ -179,9 +181,9 @@ header{
 }
 
 .join-me-on__box__element:hover{
-    color: rgb(27,49,86);
-    background: linear-gradient(135deg, rgb(27,49,86) 10%, rgb(216, 221, 232) 10%);
-    border: 1px solid rgb(216, 221, 232);
+    color: #fff;
+    background-color: #101010;
+    border: 1px solid #26ce9f;
 }
 
 .join-me-on__box__element:hover .join-me-on__box__element__name::after{
@@ -189,7 +191,7 @@ header{
 }
 
 .join-me-on__box__element:hover .join-me-on__box__element__name{
-    color: rgb(27,49,86);
+    color: #26ce9f;
 }
 
 .join-me-on__box__element__head{
@@ -212,7 +214,7 @@ header{
     width: 100%;
     height: 2px;
     margin-top: 1px;
-    background-color: #22566D;
+    background-color: #26ce9f;
     transform: scale(0);
     transition: transform 0.3s ease-in-out;
 }
@@ -222,30 +224,21 @@ header{
 }
 
 
-.box-return-top{
-    position: fixed;
-    right: 15px;
-    bottom: 15px;
-    width: 50px;
-    height: 50px;
-    z-index: 2;
-}
-
 .return-top{
     position: fixed;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid rgb(140, 149, 167);
+    right: 20px;
+    bottom: 20px;
+    width: 25px;
+    height: 30px;
+    padding: 1px;
+    border-radius: 5px ;
 }
 
 .return-top:hover{
     cursor: pointer;
-    background-color: rgb(216, 221, 232);
-    border: 1px solid rgb(216, 221, 232);
 }
 
-.box-return-top:hover{
+.return-top:hover{
     transition: 0.5s ease-in-out;
     transform: translateY(-10px);
 }
@@ -273,7 +266,7 @@ header{
 footer{
     width: 100%;
     height: 5rem;
-    border-top: 1px solid rgb(27,49,86);
+    border-top: 1px solid #26ce9e55;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -287,7 +280,7 @@ footer{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: rgb(126, 151, 195);
+    color: #fff;
 }
 
 .license__name::after{
@@ -295,7 +288,7 @@ footer{
     display: block;
     width: 100%;
     height: 1px;
-    background-color: rgb(216, 221, 232);
+    background-color: #26ce9f;
     transform: scale(0);
     transition: transform 0.2s ease-in-out;
 }
@@ -306,7 +299,7 @@ footer{
 
 .license__name:hover{
     transition: 0.2s ease-in-out;
-    color: rgb(216, 221, 232);
+    color: #26ce9f;
 }
 
 .license img{
@@ -314,6 +307,7 @@ footer{
 }
 
 .year{
+    color: #26ce9f;
     margin-top: 5px;
 }
 
@@ -349,8 +343,8 @@ footer{
     }
 
     .container{
-        width: 90vw;
-        height: 25vh;
+        width: 100%;
+        height: 40vh;
     }
 
     .container__name{
