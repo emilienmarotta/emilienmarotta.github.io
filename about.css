@@ -5,7 +5,8 @@ html{
 body{
     padding: 0;
     margin: 0;
-    background-color: #131313;
+    /* background: linear-gradient(130deg, #151515 75%, #181818 75%); */
+    background-color: #151515;
 }
 
 *{
@@ -17,7 +18,7 @@ body{
 }
 
 ::selection{
-    background-color: #636cef;
+    background-color: #26ce9f;
     color: black;
 }
 
@@ -84,9 +85,11 @@ header{
 
 .container{
     text-align: justify;
-    width: 60vw;
-    margin: 10vh auto;
+    width: 56vw;
+    margin: auto;
+    padding: 10vh 2vw;
     color: #ddd;
+    background-color: rgba(29,29,29,0.8);
 }
 
 .container__profile{
@@ -257,7 +260,7 @@ footer{
     }
 
     .container{
-        width: 80vw;
+        width: 76vw;
     }
 
     .container__profile img{
@@ -277,7 +280,7 @@ footer{
     }
 
     .container{
-        width: 85vw;
+        width: 81vw;
     }
 
     h1{
