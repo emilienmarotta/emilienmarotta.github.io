@@ -279,11 +279,7 @@ footer{
     }
 
     .container{
-        width: 85vw;
-    }
-
-    body{
-        background-color: rgba(29,29,29,0.8);
+        width: 100%;
     }
 
     h1{
