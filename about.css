@@ -279,7 +279,8 @@ footer{
     }
 
     .container{
-        width: 100%;
+        width: 88vw;
+        padding: 10vh 6vw;
     }
 
     h1{
