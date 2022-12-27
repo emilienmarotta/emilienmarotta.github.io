@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emilien Marotta</title>
+    <link rel="stylesheet" href="about.css"> 
+    <link rel="icon" type="image/png" href="Index/logo.png"> 
+    <script>
+        const now = new Date();
+        
+        function updateYearCC() {
+            const year = now.getFullYear();
+        
+            document.getElementById("year").textContent = year;
+        }
+
+        function updateAge() {
+            const day = 19;
+            const month = 2;
+            const year = 2004;
+            const birth = new Date(year, month - 1, day); // Month index : -1 (0 -> 11 not 1 -> 12) 
+            let age = now.getFullYear() - birth.getFullYear();
+            const tempDate = new Date(now.getFullYear(), month - 1, day);
+            if (now < tempDate) {
+                age --;
+            }
+            
+            document.getElementById("age").textContent = ", I'm " + age + ". ";
+        }
+    </script> 
+</head>
+<body onload="updateYearCC();updateAge()">
+    <header>
+        <div class="logo">
+            <img class="logo__1" src="Index/logo.png" width="50px">
+            <img class="logo__2" src="Index/logo-2.png" width="50px">
+        </div>
+        <nav class="menu">
+            <a class="menu__home menu__element" href="index.htm">Home</a>
+            <a class="menu__about menu__element" href="about.htm">About</a>
+            <a class="menu__portofolio menu__element" href="#">Portofolio</a>
+            <a class="menu__blog menu__element" href="#">Blog</a>
+            <a class="menu__contact menu__element" href="#">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="container__profile">
+            <div class="container__profile__text">
+                <h1>About me :</h1>
+                <div>
+                    Hey ! I’m <span class="container__profile__text__name">Emilien Marotta</span><span id="age"></span>I’m a french student in maths and computer science applied to humanities and social sciences (<a class="link" href="">MIASHS</a>) at IDMC Nancy.
+                </div>
+            </div>
+            <img src="Index/profile.png" alt="Me">
+        </div>
+        <div class="container__passions">
+            Passionate about computers, new technologies, sciences, space, cars, drawing, sport, cinema …, I decided to direct my professional project towards the fascinating field of computer science, which promises a rich and fulfilling career.
+        </div>
+        <div class="container__background">
+            I plan, once I have my MIASHS degree, to do a master’s degree in computer methods applied to business management (<a href="">MIAGE</a>), then to finish my studies with a specialised master's degree at Mines Nancy in <a href="">attack and defence of computer systems</a>.
+        </div>
+        <div class="container__project">
+            <div class="container__project__img">
+                <img src="Index/cybersecurity.jpg" alt="Cybersecurity">
+            </div>
+            <div>
+                After my studies, I would like to become a <a href="">cybersecurity expert or engineer</a>, an exciting job that combines the relational and technical aspects.
+            </div>
+        </div>
+    </div>
+    <a href="#" class="return-top">
+        <img class="return-top__img__1" src="Index/up-arrow.png" width="25px" height="30px" alt="top">
+        <img class="return-top__img__2" src="Index/up-arrow-2.png" width="25px" height="30px" alt="top">
+    </a>
+    <footer>
+        <a rel="license" class="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+            <img class="license__img__1" src="Index/creative-commons.png" alt="CC" width="16px" height="16px">
+            <img class="license__img__2" src="Index/creative-commons-2.png" alt="CC" width="16px" height="16px">
+            <div class="license__name">CC-BY-SA</div>
+        </a>
+        <div id="year" class="year"></div> <!-- JS -->
+    </footer>
+</body>
+</html>

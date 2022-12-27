@@ -1,0 +1,280 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #131313;
+}
+
+*{
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+    letter-spacing: 0.05em;
+    outline: none;
+}
+
+::selection{
+    background-color: #636cef;
+    color: black;
+}
+
+img::selection{
+    background-color: rgba(0,0,0,0);
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 2%;
+    padding-bottom: 1.5%;
+    border-bottom: 1px solid #26ce9e55;
+    background: linear-gradient(130deg, #151515 15%, #181818 15%);
+}
+
+.logo{
+    margin-left: 2%;
+}
+
+.logo__2{
+    display: none;
+}
+
+.logo:hover .logo__1{
+    display: none;
+}
+
+.logo:hover .logo__2{
+    display: inline;
+}
+
+.menu{
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu__element{
+    text-decoration: none;
+    color: #ddd;
+}
+
+.menu__element::after{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #26ce9f;
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+}
+
+.menu__element:hover::after{
+    transform: scale(1);
+}
+
+.menu__element:hover{
+    color: #26ce9f;
+}
+
+
+.container{
+    text-align: justify;
+    width: 60vw;
+    margin: 10vh auto;
+    color: #ddd;
+}
+
+.container__profile{
+    display: flex;
+}
+
+.container__profile img{
+    width: 14vw;
+    height: 14vw;
+}
+
+h1{
+    font-size: 2rem;
+    margin-bottom: 4vh;   
+}
+
+.container__profile img{
+    margin: 1vh 0 0 5vw;
+}
+
+.container__profile__text__name{
+    color: #26ce9f;
+}
+
+.container__passions{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.container__background{
+    margin-bottom: 5vh;
+}
+
+.container__project__img{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.container__project img{
+    width: 30vw;
+    border-radius: 3px;
+    border: 1px solid #141414;
+    border-style: inset;
+}
+
+.container a{
+    color: #26ce9f;
+    text-decoration: none;
+}
+
+.container a:hover{
+    text-decoration: underline;
+}
+
+.return-top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 25px;
+    height: 30px;
+    padding: 1px;
+    border-radius: 5px ;
+}
+
+.return-top:hover{
+    cursor: pointer;
+}
+
+.return-top:hover{
+    transition: 0.5s ease-in-out;
+    transform: translateY(-10px);
+}
+
+.return-top img{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.return-top__img__2{
+    display: none;
+}
+
+.return-top:hover .return-top__img__1{
+    display: none;
+}
+
+.return-top:hover .return-top__img__2{
+    display: block;
+}
+
+
+footer{
+    width: 100%;
+    height: 5rem;
+    border-top: 1px solid #26ce9e55;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #141414;
+}
+
+.license{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #ddd;
+}
+
+.license:hover{
+    color: #26ce9f;
+}
+
+.license img{
+    padding-right: 5px;
+}
+
+.year{
+    color: #26ce9f;
+    margin-top: 5px;
+}
+
+.license__img__2{
+    display: none;
+}
+
+.license:hover .license__img__1{
+    display: none;
+}
+
+.license:hover .license__img__2{
+    display: block;
+}
+
+
+@media (max-width: 875px){
+    *{
+        font-size: 0.9rem;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    header{
+        padding-top: 5%;
+        padding-bottom: 2.5%;
+        justify-content: center;
+    }
+
+    .menu{
+        width: 90vw;
+    }
+
+    .container{
+        width: 80vw;
+    }
+
+    .container__profile img{
+        width: 130px;
+        height: 130px;
+    }
+
+    .container__project img{
+        width: 300px;
+    }
+}
+
+@media (max-width: 400px){
+    header{
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+
+    .container{
+        width: 85vw;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .container__profile img{
+        width: 100px;
+        height: 100px;
+    }
+}
