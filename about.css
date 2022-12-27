@@ -100,7 +100,19 @@ header{
 
 h1{
     font-size: 2rem;
-    margin-bottom: 4vh;   
+    margin-bottom: 4vh; 
+    animation: apparition 1s ease-in-out;
+}
+
+@keyframes apparition {
+    from{
+        opacity: 0;
+        transform: translateY(-150%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .container__profile img{
