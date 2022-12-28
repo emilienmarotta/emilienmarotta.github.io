@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emilien Marotta</title>
+    <link rel="stylesheet" href="empty.css"> 
+    <link rel="icon" type="image/png" href="Index/logo.png"> 
+    <script>
+        const now = new Date();
+        
+        function updateYearCC() {
+            const year = now.getFullYear();
+        
+            document.getElementById("year").textContent = year;
+        }
+    </script> 
+</head>
+<body onload="updateYearCC();updateAge()">
+    <header>
+        <div class="logo">
+            <img class="logo__1" src="Index/logo.png" width="50px">
+            <img class="logo__2" src="Index/logo-2.png" width="50px">
+        </div>
+        <nav class="menu">
+            <a class="menu__home menu__element" href="index.htm">Home</a>
+            <a class="menu__about menu__element" href="about.htm">About</a>
+            <a class="menu__portofolio menu__element" href="empty.htm">Portofolio</a>
+            <a class="menu__blog menu__element" href="empty.htm">Blog</a>
+            <a class="menu__contact menu__element" href="empty.htm">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="band high-band"></div>
+        <div class="container__under-construction">Website under construction</div>
+        <img src="Index/build.png" alt="tools">
+        <div class="container__working-on">I'm currently working on this page...</div>
+        <div class="band low-band"></div>
+    </div>
+
+    <a href="#" class="return-top">
+        <img class="return-top__img__1" src="Index/up-arrow.png" width="25px" height="30px" alt="top">
+        <img class="return-top__img__2" src="Index/up-arrow-2.png" width="25px" height="30px" alt="top">
+    </a>
+    <footer>
+        <a rel="license" class="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+            <img class="license__img__1" src="Index/creative-commons.png" alt="CC" width="16px" height="16px">
+            <img class="license__img__2" src="Index/creative-commons-2.png" alt="CC" width="16px" height="16px">
+            <div class="license__name">CC-BY-SA</div>
+        </a>
+        <div id="year" class="year"></div> <!-- JS -->
+    </footer>
+</body>
+</html>
