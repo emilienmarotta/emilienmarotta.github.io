@@ -106,6 +106,18 @@ header{
 
 .container__under-construction{
     font-size: 3rem;
+    animation: apparition 1s ease-in-out;
+}
+
+@keyframes apparition {
+    from{
+        opacity: 0;
+        transform: translateY(-150%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .container__working-on{
@@ -342,5 +354,23 @@ footer{
 
     .lds-ellipsis {
         left: 6px;
+    }
+}
+
+@media (max-height: 400px) {
+    html,body{
+        height: auto;
+    }
+
+    .container{
+        height: 80vh;
+    }
+
+    .band{
+        height: 15px;
+    }
+
+    .container img{
+        width: 50px;
     }
 }
