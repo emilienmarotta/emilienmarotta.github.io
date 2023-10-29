@@ -219,7 +219,7 @@ a:hover {
 }
 
 #about-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #c2c8d0;
     line-height: 2rem;
 }
@@ -252,6 +252,9 @@ a:hover {
 #education-part-three {
     justify-content: center;
     align-items: center;
+}
+
+#self-taught-training {
     color: #c2c8d0;
 }
 
