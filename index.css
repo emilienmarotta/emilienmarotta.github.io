@@ -100,8 +100,12 @@ header {
 }
 
 #header-left-part {
-    font-weight: bold;
+    width: 50px;
     margin-left: 5vw;
+}
+
+#header-left-part img {
+    width: 100%;
 }
 
 #menu {

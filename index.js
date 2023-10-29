@@ -1,3 +1,7 @@
+document.addEventListener('DOMContentLoaded', function() {
+    AOS.init();
+});
+
 
 const typingSpeed = 30; // ms
 
