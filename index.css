@@ -425,6 +425,10 @@ footer {
     #soft-skills, #hard-skills {
         width: 50%;
     }   
+
+    .angle {
+        display: none;
+    }
 }
 
 @media (max-width: 600px) {
@@ -439,19 +443,7 @@ footer {
 
     #skills-parts {
         height: auto;
-    }
-
-    .vertical-rectangle {
-        width: 5px;
-        height: 150px;
-        background-color: #02b7fa;
-    }
-    
-    .horizontal-rectangle {
-        width: 150px;
-        height: 5px;
-        background-color: #02b7fa;
-    }    
+    } 
 }
 
 @media (max-width: 550px) {
