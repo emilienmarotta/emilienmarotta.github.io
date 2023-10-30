@@ -522,6 +522,13 @@ footer {
     }
 }
 
+@media (max-width: 768px) {
+    a:not(#main-box-contact):not(.social-media-link):hover {
+        color: #02b7fa;
+        background-size: 0 0;
+    }
+}
+
 @media (max-width: 600px) {
     #education-parts {
         height: auto;
