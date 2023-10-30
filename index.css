@@ -361,6 +361,45 @@ a:not(#main-box-contact):not(.social-media-link):hover {
     color: #02b7fa;
 }
 
+#projects {
+    display: flex;
+    flex-direction: column;
+}
+
+#projects-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-box {
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #314356;
+    border-radius: 5px;
+}
+
+.project-box-title {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.project-box-description {
+    color: #c2c8d0;
+    margin-bottom: 6px;
+}
+
+.project-box-consult {
+    color: #596d84;
+    transition: 0.5s ease;
+}
+
+.project-box-consult:hover {
+    color: #02b7fa;
+}
+
 footer {
     margin-top: 100px;
     display: flex;
@@ -479,6 +518,10 @@ footer {
 
     #main-box-title {
         min-width: 0;
+    }
+
+    .project-box {
+        width: 100%;
     }
 }
 
