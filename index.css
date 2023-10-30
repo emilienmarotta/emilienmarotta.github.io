@@ -251,6 +251,7 @@ a:not(#main-box-contact):not(.social-media-link):hover {
     font-size: 1.1rem;
     color: #c2c8d0;
     line-height: 2rem;
+    margin-top: 10px;
 }
 
 #education {
@@ -259,7 +260,7 @@ a:not(#main-box-contact):not(.social-media-link):hover {
 }
 
 #education-parts {
-    margin-top: 20px;
+    margin-top: 30px;
     height: 400px;
     display: flex;
     flex-direction: row;
@@ -318,7 +319,7 @@ a:not(#main-box-contact):not(.social-media-link):hover {
 }
 
 #skills-parts {
-    margin-top: 20px;
+    margin-top: 30px;
     height: 260px;
     display: flex;
     flex-direction: row;
@@ -372,6 +373,7 @@ a:not(#main-box-contact):not(.social-media-link):hover {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 10px;
+    margin-top: 30px;
 }
 
 .project-box {
