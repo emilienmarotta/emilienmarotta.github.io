@@ -4,6 +4,36 @@
     src: url("../Fonts/Mona\ Sans/Mona-Sans.ttf");
 }
 
+@keyframes blink {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes framing {
+    0% {
+        border-right-color: #314356;
+        border-left-color: #02b7fa;
+        border-top-color: #02b7fa;
+        border-bottom-color: #314356;
+    }
+    33% {
+        border-left-color: #314356;
+        border-bottom-color: #314356;
+        border-top-color: #02b7fa;
+        border-right-color: #02b7fa;
+    }
+    66% {
+        border-bottom-color: #02b7fa;
+        border-left-color: #314356;
+        border-top-color: #314356;
+        border-right-color: #02b7fa;
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -15,6 +45,12 @@ body {
     flex-direction: column;
     align-items: center;
     min-width: 300px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+body.loaded {
+    opacity: 1;
 }
 
 * {
@@ -56,7 +92,7 @@ img::selection {
     bottom: 0;
     left: 0;
     transform: translate(-10px, 10px);
-    transition: transform 0.3s ease-out;
+    transition: transform 0.5s ease-out;
 }
 
 #angle1 .vertical-rectangle {
@@ -113,12 +149,22 @@ header {
 
 a {
     text-decoration: none;
-    transition: 0.3s;
 }
 
-a:hover {
+a:not(.social-media-link) {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(0deg, #02b7fa, #02b7fa);
+    background-repeat: no-repeat;
+    background-size: 0% 2px; 
+    background-position: 0 100%;
+    transition: 0.5s;
+}
+
+a:not(.social-media-link):hover {
     color: #02b7fa;
-    text-decoration: underline;
+    background-size: 100% 2px;
 }
 
 #menu a {
@@ -159,6 +205,17 @@ footer {
     width: 30px;
 }
 
+#social-media a {
+    background-color: #fff;
+    border-radius: 5px;
+    height: 30px;
+    transition: 0.5s ease;
+}
+
+#social-media a:hover {
+    background-color: #02b7fa;
+}
+
 #copyright {
     color: #c2c8d0; 
     padding: 0px 50px 20px 50px;
@@ -180,6 +237,10 @@ footer {
     z-index: 10000;
 }
 
+#up-button:hover #arrow {
+    opacity: 0;
+}
+
 #up-button.visible {
     opacity: 1;
     cursor: pointer;
@@ -187,6 +248,20 @@ footer {
 
 #up-button img {
     width: 40px;
+}
+
+#up-button-img {
+    display: flex;
+}
+
+#arrow {
+    z-index: 10;
+    transition: 0.5s;
+}
+
+#arrow2 {
+    position: absolute;
+    z-index: 1;
 }
 
 @media (max-width: 1200px) {
@@ -198,9 +273,16 @@ footer {
         font-size: 1.1rem;
     }
 }
+
 @media (max-width: 800px) {
     .angle {
         display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    #main-box-contact {
+        padding: 10px 30px;
     }
 }
 
