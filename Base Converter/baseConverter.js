@@ -216,7 +216,7 @@ function handleInput (element, allowedChars) {
 
     element.value = newValue
 
-    if (element.value === "") {
+    if (element.value === "" && window.innerWidth > 700) {
 
         element.value = "0";
 
