@@ -200,7 +200,6 @@ function handleInput (element, allowedChars) {
     let endPosition = element.selectionEnd;
     
     let newValue = "";
-
     for (let i = 0; i < element.value.length; i ++) {
 
         if (allowedChars.includes(element.value[i])) {
@@ -228,7 +227,7 @@ function handleInput (element, allowedChars) {
         element.value = element.value.substring(1);
 
     }
-
+    
     if (element.value[0] === "0") {
         
         element.setSelectionRange(1, 1);
