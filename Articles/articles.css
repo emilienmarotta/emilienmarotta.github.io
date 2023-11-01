@@ -117,14 +117,20 @@ header {
     gap: 5vw;
 }
 
-a {
+a:not(.social-media-link) {
+    position: relative;
     text-decoration: none;
-    transition: 0.3s;
+    color: #fff;
+    background: linear-gradient(0deg, #02b7fa, #02b7fa);
+    background-repeat: no-repeat;
+    background-size: 0% 2px; 
+    background-position: 0 100%;
+    transition: 0.5s;
 }
 
-a:hover {
+a:not(.social-media-link):hover {
     color: #02b7fa;
-    text-decoration: underline;
+    background-size: 100% 2px;
 }
 
 #menu a {
@@ -223,7 +229,7 @@ footer {
 }
 
 @media (max-width: 768px) {
-    a:not(#main-box-contact):not(.social-media-link):hover {
+    a:not(.social-media-link):hover {
         color: #02b7fa;
         background-size: 0 0;
     }
