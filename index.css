@@ -277,7 +277,7 @@ a {
     text-decoration: none;
 }
 
-a:not(#main-box-contact):not(.social-media-link) {
+a:not(.main-box-button):not(.social-media-link) {
     position: relative;
     text-decoration: none;
     color: #fff;
@@ -288,7 +288,7 @@ a:not(#main-box-contact):not(.social-media-link) {
     transition: 0.5s;
 }
 
-a:not(#main-box-contact):not(.social-media-link):hover {
+a:not(.main-box-button):not(.social-media-link):hover {
     color: #02b7fa;
     background-size: 100% 2px;
 }
@@ -325,16 +325,22 @@ a:not(#main-box-contact):not(.social-media-link):hover {
     text-align: center;
 }
 
-#main-box-contact {
+#main-box-buttons {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.main-box-button {
     padding: 10px 60px;
     border: 1px solid #fff;
     border-radius: 50px;
-    margin-top: 50px;
     text-transform: uppercase;
     transition: 0.5s;
 }
 
-#main-box-contact:hover {
+.main-box-button:hover {
     cursor: pointer;
     border-color: #02b7fa;
     color: #02b7fa;
@@ -698,9 +704,15 @@ footer {
 }
 
 @media (max-width: 768px) {
-    a:not(#main-box-contact):not(.social-media-link):hover {
+    a:not(.main-box-button):not(.social-media-link):hover {
         color: #02b7fa;
         background-size: 0 0;
+    }
+}
+
+@media (max-width: 680px) {
+    .main-box-button {
+        padding: 10px 20px;
     }
 }
 
@@ -717,12 +729,6 @@ footer {
     #skills-parts {
         height: auto;
     } 
-}
-
-@media (max-width: 550px) {
-    #main-box-contact {
-        padding: 10px 30px;
-    }
 }
 
 @media (max-width: 500px) {
