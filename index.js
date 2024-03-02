@@ -33,11 +33,9 @@ function typeText(htmlElement, text, charIndex) {
     }
 }
 
-// if (window.innerWidth > 420) {
-//     typeText(mainBoxTitleText, "Bonjour, je suis Emilien Marotta !", 0);
-// } else {
-//     mainBoxTitleText.innerHTML = '<span class="blue-word">Bonjour,</span> Je suis<br>Emilien Marotta !';
-// }
+if (window.innerWidth < 420) {
+    mainBoxTitleText.innerHTML = '<span class="blue-word">Bonjour,</span> Je suis<br>Emilien Marotta !';
+}
 
 document.addEventListener("DOMContentLoaded", function() {
     
