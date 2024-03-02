@@ -33,20 +33,21 @@ function typeText(htmlElement, text, charIndex) {
     }
 }
 
-if (window.innerWidth < 420) {
-    mainBoxTitleText.innerHTML = '<span class="blue-word">Bonjour,</span> Je suis<br>Emilien Marotta !';
-}
 
 document.addEventListener("DOMContentLoaded", function() {
     
+    if (window.innerWidth < 420) {
+        mainBoxTitleText.innerHTML = '<span class="blue-word">BONJOUR,</span> Je suis<br>Emilien Marotta !';
+    }
+    
     const angle1 = document.getElementById("angle1");
     const angle2 = document.getElementById("angle2");
-
+    
     setTimeout( () => {
-
+        
         angle1.style.transform = "translate(0, 0)";
         angle2.style.transform = "translate(0, 0)";
-    
+        
     }, 1500);
 
 });
