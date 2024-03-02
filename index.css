@@ -465,6 +465,10 @@ footer {
     #img-box {
         width: 300px;
     }
+
+    #main-box-left-part {
+        background-color: red;
+    }
 }
 
 @media (max-width: 1000px) {
