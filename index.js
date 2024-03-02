@@ -36,12 +36,6 @@ function typeText(htmlElement, text, charIndex) {
 
 document.addEventListener("DOMContentLoaded", function() {
     
-    if (window.innerWidth < 420) {
-        mainBoxTitleText.innerHTML = '<span class="blue-word">BONJOUR,</span> Je suis<br>Emilien Marotta !';
-    } else {
-        mainBoxTitleText.innerHTML = 'Test';
-    }
-    
     const angle1 = document.getElementById("angle1");
     const angle2 = document.getElementById("angle2");
     
@@ -98,16 +92,16 @@ scrollToTopButton.addEventListener("click", () => {
 
 let mainBoxTitle = document.getElementById("main-box-title-text");
 
-function addReturnToLine () {
-    let screenWidth = window.innerWidth;
-    if (screenWidth < 420) {
-        mainBoxTitle.innerHTML = '<span class="blue-word">Bonjour,</span> Je suis<br>Emilien Marotta !';
-    } else {
-        mainBoxTitle.innerHTML = '<span class="blue-word">Bonjour,</span> Je suis Emilien Marotta !';
-    }
-}
+// function addReturnToLine () {
+//     let screenWidth = window.innerWidth;
+//     if (screenWidth < 420) {
+//         mainBoxTitle.innerHTML = '<span class="blue-word">Bonjour,</span> Je suis<br>Emilien Marotta !';
+//     } else {
+//         mainBoxTitle.innerHTML = '<span class="blue-word">Bonjour,</span> Je suis Emilien Marotta !';
+//     }
+// }
 
 
-window.addEventListener('resize', () => {
-    addReturnToLine();
-});
+// window.addEventListener('resize', () => {
+//     addReturnToLine();
+// });

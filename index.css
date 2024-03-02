@@ -318,7 +318,7 @@ a:not(.main-box-button):not(.social-media-link):hover {
 #main-box-title {
     font-size: 2.5rem;
     text-align: center;
-    min-width: 550px;
+    /* min-width: 550px; */
 }
 
 #main-box-description {
