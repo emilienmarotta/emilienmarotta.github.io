@@ -20,7 +20,7 @@ const mainBoxTitleText = document.getElementById("main-box-title-text");
 function typeText(htmlElement, text, charIndex) {
     if (charIndex < text.length) {
         htmlElement.classList.add("cursor-blink");
-        if (charIndex < 6) {
+        if (charIndex < 8) {
             htmlElement.innerHTML += '<span class="blue-word">' + text.charAt(charIndex) + '</span>';
         } else {
             htmlElement.classList.add("cursor-blink");
@@ -33,7 +33,11 @@ function typeText(htmlElement, text, charIndex) {
     }
 }
 
-typeText(mainBoxTitleText, "Hello, I am Emilien Marotta!", 0);
+// if (window.innerWidth > 420) {
+//     typeText(mainBoxTitleText, "Bonjour, je suis Emilien Marotta !", 0);
+// } else {
+//     mainBoxTitleText.innerHTML = '<span class="blue-word">Bonjour,</span> Je suis<br>Emilien Marotta !';
+// }
 
 document.addEventListener("DOMContentLoaded", function() {
     
@@ -89,4 +93,20 @@ scrollToTopButton.addEventListener("click", () => {
 
     });
 
+});
+
+let mainBoxTitle = document.getElementById("main-box-title-text");
+
+function addReturnToLine () {
+    let screenWidth = window.innerWidth;
+    if (screenWidth < 420) {
+        mainBoxTitle.innerHTML = '<span class="blue-word">Bonjour,</span> Je suis<br>Emilien Marotta !';
+    } else {
+        mainBoxTitle.innerHTML = '<span class="blue-word">Bonjour,</span> Je suis Emilien Marotta !';
+    }
+}
+
+
+window.addEventListener('resize', () => {
+    addReturnToLine();
 });
