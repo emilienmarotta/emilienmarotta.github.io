@@ -38,6 +38,8 @@ document.addEventListener("DOMContentLoaded", function() {
     
     if (window.innerWidth < 420) {
         mainBoxTitleText.innerHTML = '<span class="blue-word">BONJOUR,</span> Je suis<br>Emilien Marotta !';
+    } else {
+        mainBoxTitleText.innerHTML = 'Test';
     }
     
     const angle1 = document.getElementById("angle1");
