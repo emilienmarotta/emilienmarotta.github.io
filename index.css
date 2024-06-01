@@ -1,0 +1,239 @@
+
+@font-face {
+    font-family: "Comfortaa";
+    src: url("fonts/Comfortaa/ComfortaaLight.ttf");
+}
+
+@keyframes framing-animation {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 0.3;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+*{
+    font-family: "Comfortaa", "Arial";
+}
+
+*::selection {
+    color: #C8C8CB;
+    background-color: #83783E;
+}
+
+img::selection {
+    background-color: #0000;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #1D1D20;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.vertical-rectangle {
+    width: 10px;
+    height: 150px;
+}
+
+.horizontal-rectangle {
+    width: 150px;
+    height: 10px;
+}
+
+#angle1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translate(10px, -10px);
+    transition: transform 0.5s ease-out;
+}
+
+#angle2 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: translate(-10px, 10px);
+    transition: transform 0.5s ease-out;
+}
+
+#angle1 .vertical-rectangle {
+    background: linear-gradient(to bottom, #C4B55C, #7D7881);
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+#angle1 .horizontal-rectangle {
+    background: linear-gradient(to left, #C4B55C, #7D7881);
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+#angle2 .vertical-rectangle {
+    background: linear-gradient(to top, #C4B55C, #7D7881);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+#angle2 .horizontal-rectangle {
+    background: linear-gradient(to right, #C4B55C, #7D7881);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 10vw 0 10vw;
+}
+
+#logo {
+    height: 30px;
+}
+
+#social-media {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#social-media img {
+    width: 30px;
+}
+
+#social-media a {
+    background-color: #767677;
+    border-radius: 5px;
+    height: 30px;
+    transition: 0.5s ease;
+}
+
+#social-media a:hover {
+    background-color: #C4B55C;
+}
+
+#intro-box {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    gap: 50px;
+}
+
+h1 {
+    margin: 0;
+    color: #C8C8CB;
+    font-size: 4em;
+    padding-bottom: 30px;
+    border-bottom: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to left, #C4B55C, #7D7881);
+}
+
+#intro-text {
+    margin: 0;
+    padding-left: 30px;
+    color: #8F8F8F;
+    border-left: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to top, #C4B55C, #7D7881);
+}
+
+#contact {
+    min-width: 170px;
+    margin: 0;
+    position: relative;
+    width: 50%;
+    font-size: 1.5em;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #C4B55C;
+    border: 3px solid #C4B55C;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+#contact:hover {
+    color: #C4B55C;
+    background-color: #0000;
+}
+
+footer {
+    color: #8F8F8F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10vw 0 10vw;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    #intro-box {
+        width: 90%;
+    }    
+}
+
+@media (max-width: 650px) {
+    header {
+        padding-bottom: 50px;
+    }
+
+    footer {
+        padding-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 3em;
+        width: 100%;
+        text-align: center;
+    }
+
+    #contact {
+        font-size: 1.5em;
+        padding: 5px 0;
+    }
+
+    #intro-box {
+        align-items: center;
+    }
+
+    .vertical-rectangle {
+        width: 5px;
+        height: 150px;
+    }
+    
+    .horizontal-rectangle {
+        width: 150px;
+        height: 5px;
+    }
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    #contact {
+        font-size: 1.3em;
+    }
+}
