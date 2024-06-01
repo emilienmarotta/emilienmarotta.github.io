@@ -12,9 +12,3 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 500);
 
 });
-
-// function fadeOut() {
-//     const element = document.getElementById('fadeIn');
-//     element.classList.add('fade-out');
-// }
-

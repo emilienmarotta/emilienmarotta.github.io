@@ -22,8 +22,8 @@
 }
 
 *::selection {
-    color: #C8C8CB;
-    background-color: #83783E;
+    color: #1D1D20;
+    background-color: #02b7fa;
 }
 
 img::selection {
@@ -48,11 +48,14 @@ body {
 .vertical-rectangle {
     width: 10px;
     height: 150px;
+    background-color: #02b7fa;
 }
 
 .horizontal-rectangle {
     width: 150px;
     height: 10px;
+    background-color: #02b7fa;
+    position: fixed;
 }
 
 #angle1 {
@@ -72,29 +75,21 @@ body {
 }
 
 #angle1 .vertical-rectangle {
-    background: linear-gradient(to bottom, #C4B55C, #7D7881);
-    position: fixed;
     right: 0;
     top: 0;
 }
 
 #angle1 .horizontal-rectangle {
-    background: linear-gradient(to left, #C4B55C, #7D7881);
-    position: fixed;
     right: 0;
     top: 0;
 }
 
 #angle2 .vertical-rectangle {
-    background: linear-gradient(to top, #C4B55C, #7D7881);
-    position: fixed;
     left: 0;
     bottom: 0;
 }
 
 #angle2 .horizontal-rectangle {
-    background: linear-gradient(to right, #C4B55C, #7D7881);
-    position: fixed;
     left: 0;
     bottom: 0;
 }
@@ -120,14 +115,14 @@ header {
 }
 
 #social-media a {
-    background-color: #767677;
+    background-color: #C8C8CB;
     border-radius: 5px;
     height: 30px;
     transition: 0.5s ease;
 }
 
 #social-media a:hover {
-    background-color: #C4B55C;
+    background-color: #02b7fa;
 }
 
 #intro-box {
@@ -145,17 +140,15 @@ h1 {
     font-size: 4em;
     padding-bottom: 30px;
     border-bottom: 3px solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to left, #C4B55C, #7D7881);
+    border-color: #02b7fa;
 }
 
 #intro-text {
     margin: 0;
     padding-left: 30px;
-    color: #8F8F8F;
+    color: #C8C8CB;
     border-left: 3px solid;
-    border-image-slice: 1;
-    border-image-source: linear-gradient(to top, #C4B55C, #7D7881);
+    border-color: #02b7fa;
 }
 
 #contact {
@@ -166,19 +159,19 @@ h1 {
     font-size: 1.5em;
     margin-top: 20px;
     padding: 10px 0;
-    background-color: #C4B55C;
-    border: 3px solid #C4B55C;
+    background-color: #02b7fa;
+    border: 3px solid #02b7fa;
     transition-duration: 0.5s;
     cursor: pointer;
 }
 
 #contact:hover {
-    color: #C4B55C;
+    color: #02b7fa;
     background-color: #0000;
 }
 
 footer {
-    color: #8F8F8F;
+    color: #C8C8CB;
     display: flex;
     justify-content: center;
     align-items: center;
