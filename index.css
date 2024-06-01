@@ -236,4 +236,8 @@ footer p {
     #contact {
         font-size: 1.3em;
     }
+
+    .angle {
+        display: none;
+    }
 }
