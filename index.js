@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
+    AOS.init();
     
     const angle1 = document.getElementById("angle1");
     const angle2 = document.getElementById("angle2");
@@ -11,3 +12,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 500);
 
 });
+
